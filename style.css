@@ -1,0 +1,367 @@
+body {
+  height: 300vh;
+  overflow: hidden;
+  background-image: "backdrop.jpg";
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  height: 10px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 15px;
+  width: 20px;
+  height: 1px;
+}
+
+canvas {
+  width: 10px;
+  height: 10px;
+}
+
+.appTitle {
+  height: 1%;
+  width: 0.1px;
+}
+
+.hline {
+  width: 900px;
+  height: 30px;
+}
+
+.info {
+  width: 50px;
+  height: 50px;
+}
+
+.greeting {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+}
+
+.greeting1 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+.greeting2 {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+.greeting3 {
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 0.1vw rgba(255, 255, 255, 0.39);
+  text-transform: lowercase;
+}
+
+.greeting3::before {
+  content: "School vaccination information center";
+  position: absolute;
+  align-self: initial;
+  background: transparent;
+  backdrop-filter: blur(00.1px);
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #40f3a8;
+  border-right: 2px;
+  -webkit-text-stroke: 0vw;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  97% {
+    width: 100%;
+  }
+}
+
+.greeting4 {
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.greeting5 {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.greeting6 {
+  font-size: 23px;
+  color: rgb(0, 0, 0);
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+.customInput {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 7px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.customInput1 {
+  width: 330px;
+  height: 50px;
+  border-color: transparent;
+  padding: 10px;
+  background-color: white;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.customInput2 {
+  width: 330px;
+  height: 50px;
+  border-color: transparent;
+  padding: 10px;
+  background-color: white;
+  font-size: 18px;
+  -webkit-text-security: disc;
+  -moz-text-security: disc;
+  /*  font-family: 'Poppins', sans-serif;*/
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.customInput3 {
+  width: 330px;
+  height: 70px;
+  border-color: transparent;
+  padding: 10px;
+  background-color: white;
+  font-size: 18px;
+  -webkit-text-security: disc;
+  -moz-text-security: disc;
+  /*  font-family: 'Poppins', sans-serif;*/
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.customInput1:hover {
+  border-color: black;
+  outline: auto;
+}
+
+.customInput2:hover {
+  border-color: black;
+  outline: auto;
+}
+
+.size {
+  width: 20px;
+  height: 20px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 2; /* Firefox */
+}
+
+.customButton {
+  width: 160px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  border-color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.customButton:hover {
+  background-color: black;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/*bootstrap*/
+.navbar {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  position: sticky;
+}
+
+.nav-link:hover {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(197, 197, 197);
+  border-radius: 4px;
+  border-bottom: 3px solid rgba(51, 255, 0, 0.801);
+  transition: 0.2s;
+}
+
+.home {
+  padding-left: 70px;
+  min-height: 100vh;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(right, lightgreen, lightblue);
+  backdrop-filter: blur(10px);
+  background-position: auto;
+}
+
+.img {
+  background-position: cover;
+}
+
+.title {
+  color: blue;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.1vw rgba(118, 162, 255, 0.39);
+}
+
+.titles {
+  color: blue;
+  font-weight: bolder;
+  padding-left: 10%;
+  -webkit-text-stroke: 0.1vw rgba(118, 162, 255, 0.39);
+}
+
+.my-lg-21 {
+  padding-left: 30px;
+}
+
+.get-Vaccine .same-position {
+  position: fixed;
+  top: 10px;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(right, lightgreen, lightblue);
+  backdrop-filter: blur(10px);
+  background-position: auto;
+  position: relative;
+  height: 100vh;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-image: -webkit-linear-gradient(right, lightgreen, lightblue);
+  backdrop-filter: blur(100px);
+  box-shadow: 3px 3px 10px 1px #999;
+  transition: 1s;
+}
+
+.circle:hover {
+  border-radius: 10px;
+  width: 1000px;
+  height: 500px;
+  transition: 1s;
+}
+
+.circle img {
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  transition: 1s;
+}
+
+.circle:hover img {
+  width: 100px;
+  top: 0.1%;
+  left: 2%;
+  transition: 1s;
+}
+
+.circle .content {
+  visibility: hidden;
+}
+
+.circle:hover .content .my-lg-21 {
+  visibility: visible;
+  position: absolute;
+  top: 25%;
+}
+
+.circle:hover .content .my-lg-22 {
+  visibility: visible;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+
+.circle:hover .content .titles {
+  visibility: visible;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.circle:hover .content .link {
+  visibility: visible;
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}
+
+.circle:hover .content .mp {
+  visibility: visible;
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  border-radius: 60%;
+  width: 150px;
+  transition: 0s;
+}
+
+.circle .content .mp {
+  visibility: hidden;
+  position: absolute;
+  transition: 0s;
+}
+
+.circle .content .tc {
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  border-radius: 60%;
+  width: 150px;
+  background-color: red;
+}
+
+.circle .wt {
+  justify-content: center;
+  background-color: yellow;
+  bottom: 1050px;
+}
